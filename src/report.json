@@ -1,0 +1,204 @@
+{
+  "generatedAt": "2026-03-20T21:25:10.344Z",
+  "totalEndpoints": 16,
+  "summary": {
+    "valid": 13,
+    "invalid_endpoint": 3,
+    "insufficient_scopes": 0,
+    "error": 0
+  },
+  "results": [
+    {
+      "toolSlug": "GMAIL_LIST_MESSAGES",
+      "method": "GET",
+      "path": "/gmail/v1/users/me/messages",
+      "status": "valid",
+      "httpStatusCode": 200,
+      "responseSummary": "{\"message\":\"Mock success for GMAIL_LIST_MESSAGES\",\"id\":\"mock_1774041887792\"}",
+      "scopesRequired": [
+        "https://www.googleapis.com/auth/gmail.readonly"
+      ],
+      "scopesAvailable": []
+    },
+    {
+      "toolSlug": "GMAIL_GET_MESSAGE",
+      "method": "GET",
+      "path": "/gmail/v1/users/me/messages/{messageId}",
+      "status": "valid",
+      "httpStatusCode": 200,
+      "responseSummary": "{\"message\":\"Mock success for GMAIL_GET_MESSAGE\",\"id\":\"mock_1774041889296\"}",
+      "scopesRequired": [
+        "https://www.googleapis.com/auth/gmail.readonly"
+      ],
+      "scopesAvailable": []
+    },
+    {
+      "toolSlug": "GMAIL_SEND_MESSAGE",
+      "method": "POST",
+      "path": "/gmail/v1/users/me/messages/send",
+      "status": "valid",
+      "httpStatusCode": 200,
+      "responseSummary": "{\"message\":\"Mock success for GMAIL_SEND_MESSAGE\",\"id\":\"mock_1774041890802\"}",
+      "scopesRequired": [
+        "https://www.googleapis.com/auth/gmail.send"
+      ],
+      "scopesAvailable": []
+    },
+    {
+      "toolSlug": "GMAIL_LIST_LABELS",
+      "method": "GET",
+      "path": "/gmail/v1/users/me/labels",
+      "status": "valid",
+      "httpStatusCode": 200,
+      "responseSummary": "{\"message\":\"Mock success for GMAIL_LIST_LABELS\",\"id\":\"mock_1774041892315\"}",
+      "scopesRequired": [
+        "https://www.googleapis.com/auth/gmail.labels"
+      ],
+      "scopesAvailable": []
+    },
+    {
+      "toolSlug": "GMAIL_GET_PROFILE",
+      "method": "GET",
+      "path": "/gmail/v1/users/me/profile",
+      "status": "valid",
+      "httpStatusCode": 200,
+      "responseSummary": "{\"message\":\"Mock success for GMAIL_GET_PROFILE\",\"id\":\"mock_1774041893815\"}",
+      "scopesRequired": [
+        "https://www.googleapis.com/auth/gmail.readonly"
+      ],
+      "scopesAvailable": []
+    },
+    {
+      "toolSlug": "GMAIL_CREATE_DRAFT",
+      "method": "POST",
+      "path": "/gmail/v1/users/me/drafts",
+      "status": "valid",
+      "httpStatusCode": 200,
+      "responseSummary": "{\"message\":\"Mock success for GMAIL_CREATE_DRAFT\",\"id\":\"mock_1774041895318\"}",
+      "scopesRequired": [
+        "https://www.googleapis.com/auth/gmail.compose"
+      ],
+      "scopesAvailable": []
+    },
+    {
+      "toolSlug": "GMAIL_LIST_THREADS",
+      "method": "GET",
+      "path": "/gmail/v1/users/me/threads",
+      "status": "valid",
+      "httpStatusCode": 200,
+      "responseSummary": "{\"message\":\"Mock success for GMAIL_LIST_THREADS\",\"id\":\"mock_1774041896820\"}",
+      "scopesRequired": [
+        "https://www.googleapis.com/auth/gmail.readonly"
+      ],
+      "scopesAvailable": []
+    },
+    {
+      "toolSlug": "GMAIL_TRASH_MESSAGE",
+      "method": "POST",
+      "path": "/gmail/v1/users/me/messages/{messageId}/trash",
+      "status": "valid",
+      "httpStatusCode": 200,
+      "responseSummary": "{\"message\":\"Mock success for GMAIL_TRASH_MESSAGE\",\"id\":\"mock_1774041898322\"}",
+      "scopesRequired": [
+        "https://www.googleapis.com/auth/gmail.modify"
+      ],
+      "scopesAvailable": []
+    },
+    {
+      "toolSlug": "GMAIL_LIST_FOLDERS",
+      "method": "GET",
+      "path": "/gmail/v1/users/me/folders",
+      "status": "invalid_endpoint",
+      "httpStatusCode": 404,
+      "responseSummary": "Error 404: Endpoint /gmail/v1/users/me/folders not found. This is a fake endpoint.",
+      "scopesRequired": [
+        "https://www.googleapis.com/auth/gmail.readonly"
+      ],
+      "scopesAvailable": []
+    },
+    {
+      "toolSlug": "GMAIL_ARCHIVE_MESSAGE",
+      "method": "POST",
+      "path": "/gmail/v1/users/me/messages/{messageId}/archive",
+      "status": "invalid_endpoint",
+      "httpStatusCode": 404,
+      "responseSummary": "Error 404: Endpoint /gmail/v1/users/me/messages/{messageId}/archive not found. This is a fake endpoint.",
+      "scopesRequired": [
+        "https://www.googleapis.com/auth/gmail.modify"
+      ],
+      "scopesAvailable": []
+    },
+    {
+      "toolSlug": "GOOGLECALENDAR_LIST_EVENTS",
+      "method": "GET",
+      "path": "/calendar/v3/calendars/primary/events",
+      "status": "valid",
+      "httpStatusCode": 200,
+      "responseSummary": "{\"message\":\"Mock success for GOOGLECALENDAR_LIST_EVENTS\",\"id\":\"mock_1774041902826\"}",
+      "scopesRequired": [
+        "https://www.googleapis.com/auth/calendar.readonly"
+      ],
+      "scopesAvailable": []
+    },
+    {
+      "toolSlug": "GOOGLECALENDAR_CREATE_EVENT",
+      "method": "POST",
+      "path": "/calendar/v3/calendars/primary/events",
+      "status": "valid",
+      "httpStatusCode": 200,
+      "responseSummary": "{\"message\":\"Mock success for GOOGLECALENDAR_CREATE_EVENT\",\"id\":\"mock_1774041904329\"}",
+      "scopesRequired": [
+        "https://www.googleapis.com/auth/calendar.events"
+      ],
+      "scopesAvailable": []
+    },
+    {
+      "toolSlug": "GOOGLECALENDAR_GET_EVENT",
+      "method": "GET",
+      "path": "/calendar/v3/calendars/primary/events/{eventId}",
+      "status": "valid",
+      "httpStatusCode": 200,
+      "responseSummary": "{\"message\":\"Mock success for GOOGLECALENDAR_GET_EVENT\",\"id\":\"mock_1774041905832\"}",
+      "scopesRequired": [
+        "https://www.googleapis.com/auth/calendar.readonly"
+      ],
+      "scopesAvailable": []
+    },
+    {
+      "toolSlug": "GOOGLECALENDAR_LIST_CALENDARS",
+      "method": "GET",
+      "path": "/calendar/v3/users/me/calendarList",
+      "status": "valid",
+      "httpStatusCode": 200,
+      "responseSummary": "{\"message\":\"Mock success for GOOGLECALENDAR_LIST_CALENDARS\",\"id\":\"mock_1774041907340\"}",
+      "scopesRequired": [
+        "https://www.googleapis.com/auth/calendar.readonly"
+      ],
+      "scopesAvailable": []
+    },
+    {
+      "toolSlug": "GOOGLECALENDAR_DELETE_EVENT",
+      "method": "DELETE",
+      "path": "/calendar/v3/calendars/primary/events/{eventId}",
+      "status": "valid",
+      "httpStatusCode": 200,
+      "responseSummary": "{\"message\":\"Mock success for GOOGLECALENDAR_DELETE_EVENT\",\"id\":\"mock_1774041908841\"}",
+      "scopesRequired": [
+        "https://www.googleapis.com/auth/calendar.events"
+      ],
+      "scopesAvailable": []
+    },
+    {
+      "toolSlug": "GOOGLECALENDAR_LIST_REMINDERS",
+      "method": "GET",
+      "path": "/calendar/v3/calendars/primary/reminders",
+      "status": "invalid_endpoint",
+      "httpStatusCode": 404,
+      "responseSummary": "Error 404: Endpoint /calendar/v3/calendars/primary/reminders not found. This is a fake endpoint.",
+      "scopesRequired": [
+        "https://www.googleapis.com/auth/calendar.readonly"
+      ],
+      "scopesAvailable": []
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Agents Engineer: Endpoint Tester
 
-**Role:** Agents Engineer | **Duration:** 90 minutes | **Format:** Hands-on implementation with Claude Code
+**Role:** Agents Engineer | **Duration:** 90 minutes | **Format:** Hands-on implementation 
 
 ---
 
